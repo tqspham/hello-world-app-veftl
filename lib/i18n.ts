@@ -1,5 +1,3 @@
-'use client';
-
 export const LANGUAGES = {
   EN: 'English',
   ES: 'Español',

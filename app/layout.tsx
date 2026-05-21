@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Navigation } from '@/components/Navigation';
+import { DEFAULT_LANGUAGE, getTranslation } from '@/lib/i18n';
 
 export const metadata: Metadata = {
-  title: 'Hello, World! - Theme Toggle',
-  description: 'A clean, minimalist app with smooth light and dark theme switching',
+  title: getTranslation(DEFAULT_LANGUAGE, 'appTitle'),
+  description: getTranslation(DEFAULT_LANGUAGE, 'appDescription'),
 };
 
 export default function RootLayout({

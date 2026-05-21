@@ -2,6 +2,7 @@
 
 import { useThemeStore } from '@/lib/store';
 import { getTranslation } from '@/lib/i18n';
+import { RunningFigure } from '@/components/RunningFigure';
 
 export default function Home() {
   const language = useThemeStore((state) => state.language);
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="text-center max-w-2xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold">{heading}</h1>
         <p className="text-(--color-muted-text) mt-4 text-lg">{description}</p>
+        <RunningFigure />
       </div>
     </main>
   );

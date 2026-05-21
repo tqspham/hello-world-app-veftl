@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { Navigation } from '@/components/Navigation';
 
 export const metadata: Metadata = {
-  title: 'Hello, World!',
-  description: 'A simple hello world application',
+  title: 'Hello, World! - Theme Toggle',
+  description: 'A clean, minimalist app with smooth light and dark theme switching',
 };
 
 export default function RootLayout({
@@ -12,8 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider>
+          <Navigation />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

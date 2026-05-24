@@ -11,12 +11,12 @@ export default function Home() {
   const description = getTranslation(language, 'pageDescription');
 
   return (
-    <main className="flex items-center justify-center min-h-[calc(100vh-73px)] bg-(--color-background) text-(--color-text)">
+    <div className="flex items-center justify-center min-h-[calc(100vh-73px)] bg-(--color-background) text-(--color-text)">
       <div className="text-center max-w-2xl mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold">{heading}</h1>
         <p className="text-(--color-muted-text) mt-4 text-lg">{description}</p>
         <RunningFigure />
       </div>
-    </main>
+    </div>
   );
 }

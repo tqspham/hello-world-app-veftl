@@ -161,7 +161,7 @@ export function ContactForm() {
             value={formData.name}
             onChange={handleInputChange}
             placeholder={getTranslation(language, 'namePlaceholder')}
-            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) transition-colors duration-300 ${
+            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 transition-colors duration-300 ${
               errors.name ? 'border-(--color-danger)' : 'border-(--color-border)'
             }`}
           />
@@ -180,7 +180,7 @@ export function ContactForm() {
             value={formData.email}
             onChange={handleInputChange}
             placeholder={getTranslation(language, 'emailPlaceholder')}
-            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) transition-colors duration-300 ${
+            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 transition-colors duration-300 ${
               errors.email ? 'border-(--color-danger)' : 'border-(--color-border)'
             }`}
           />
@@ -199,7 +199,7 @@ export function ContactForm() {
             value={formData.subject}
             onChange={handleInputChange}
             placeholder={getTranslation(language, 'subjectPlaceholder')}
-            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) transition-colors duration-300 ${
+            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 transition-colors duration-300 ${
               errors.subject ? 'border-(--color-danger)' : 'border-(--color-border)'
             }`}
           />
@@ -218,7 +218,7 @@ export function ContactForm() {
             onChange={handleInputChange}
             placeholder={getTranslation(language, 'messagePlaceholder')}
             rows={6}
-            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) transition-colors duration-300 resize-none ${
+            className={`w-full px-4 py-3 bg-(--color-surface) border rounded-lg text-(--color-text) placeholder-(--color-muted-text) focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 transition-colors duration-300 resize-none ${
               errors.message ? 'border-(--color-danger)' : 'border-(--color-border)'
             }`}
           />
@@ -228,7 +228,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full px-6 py-3 bg-(--color-primary) text-(--color-background) font-semibold rounded-lg transition-colors duration-300 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 dark:focus:ring-offset-(--color-primary) disabled:opacity-60 disabled:cursor-not-allowed"
+          className="w-full px-6 py-3 bg-(--color-accent) text-(--color-background) font-semibold rounded-lg transition-colors duration-300 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-(--color-accent) focus:ring-offset-2 dark:focus:ring-offset-(--color-primary) disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {isSubmitting ? getTranslation(language, 'submitting') : getTranslation(language, 'submitButton')}
         </button>

@@ -15,15 +15,15 @@ export function Navigation() {
   const isDark = theme === 'dark';
 
   return (
-    <nav className="bg-(--color-primary) text-(--color-background) transition-colors duration-300">
+    <nav className="bg-(--color-primary) text-(--color-primary) transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold hover:opacity-80 transition-opacity duration-300">
+        <Link href="/" className="text-lg font-semibold text-(--color-background) hover:opacity-80 transition-opacity duration-300">
           Hello, World!
         </Link>
         <div className="flex items-center gap-6">
           <Link
             href="/contact"
-            className="text-sm font-medium hover:opacity-80 transition-opacity duration-300"
+            className="text-sm font-medium text-(--color-accent) hover:opacity-80 transition-opacity duration-300"
           >
             {getTranslation(language, 'contactNav')}
           </Link>

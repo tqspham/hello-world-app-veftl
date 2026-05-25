@@ -3,6 +3,7 @@ export const LANGUAGES = {
   ES: 'Español',
   FR: 'Français',
   DE: 'Deutsch',
+  VI: 'Tiếng Việt',
 } as const;
 
 export type LanguageCode = keyof typeof LANGUAGES;
@@ -113,6 +114,32 @@ export const translations: Record<LanguageCode, Record<string, string>> = {
     invalidEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein',
     successMessage: 'Vielen Dank! Ihre Nachricht wurde erfolgreich versendet.',
     submissionError: 'Bei der Übermittlung Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+  },
+  VI: {
+    appTitle: 'Xin Chào, Thế Giới! - Chuyển Đổi Chủ Đề',
+    appDescription: 'Một ứng dụng sạch sẽ, tối giản với chuyển đổi mượt mà giữa chế độ sáng và tối',
+    pageHeading: 'Xin Chào, Thế Giới!',
+    pageDescription: 'Bật tắt chủ đề trong thanh điều hướng để chuyển đổi giữa chế độ sáng và tối. Tùy chọn của bạn sẽ được lưu sau khi tải lại trang.',
+    selectLanguage: 'Ngôn Ngữ',
+    switchLanguage: 'Chuyển đổi ngôn ngữ',
+    contactTitle: 'Liên Hệ Với Chúng Tôi - Xin Chào, Thế Giới!',
+    contactDescription: 'Hãy liên hệ với chúng tôi. Chúng tôi rất muốn nghe từ bạn.',
+    contactHeading: 'Liên Hệ Với Chúng Tôi',
+    contactNav: 'Liên Hệ',
+    nameLabel: 'Tên',
+    namePlaceholder: 'Họ và tên của bạn',
+    emailLabel: 'Email',
+    emailPlaceholder: 'email.cua.ban@example.com',
+    subjectLabel: 'Chủ Đề',
+    subjectPlaceholder: 'Nội dung là gì?',
+    messageLabel: 'Tin Nhắn',
+    messagePlaceholder: 'Cho chúng tôi biết thêm...',
+    submitButton: 'Gửi Tin Nhắn',
+    submitting: 'Đang gửi...',
+    fieldRequired: 'Trường này là bắt buộc',
+    invalidEmail: 'Vui lòng nhập địa chỉ email hợp lệ',
+    successMessage: 'Cảm ơn bạn! Tin nhắn của bạn đã được gửi thành công.',
+    submissionError: 'Đã xảy ra lỗi khi gửi tin nhắn của bạn. Vui lòng thử lại.',
   },
 };
 
